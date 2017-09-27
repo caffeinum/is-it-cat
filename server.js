@@ -87,7 +87,7 @@ function getUpdates() {
 function handleUpdate(update) {
   if (!update.message.photo) {
     var code = update.message.text;
-    console.log("get",code)
+    console.log("text: [", update.message.from.username, "]: ",code)
     return 
   }
 
