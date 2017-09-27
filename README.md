@@ -1,28 +1,16 @@
-Welcome to the Glitch BETA
+Is It Cat?
 =========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This is the source code for the bot, who runs on AWS servers. The setup is: Keros on Tensorflow, python3 and nodejs.
 
-**Glitch** is the friendly commmunity where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+To run, if everything else is set up,
 
-Find out more [about Glitch](https://glitch.com/about).
+    export PORT=8080
+    npm install
+    npm run start
+    
+This implies you have installed all the needed python binaries.
 
+Every picture send to the bot, he saves into `public/photos` directory.
 
-Your Project
-------------
-
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
-# is-it-cat
+Be careful, `exec` call is greatly unoptimized, you should not do this in production. Needs much refactoring.
