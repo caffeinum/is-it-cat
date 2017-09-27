@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "forever": "forever start -l forever.log -o out.log -e err.log server.js"
+    "forever": "forever start -a -l forever.log -o out.log -e err.log server.js"
   },
   "dependencies": {
     "express": "^4.15.3"
