@@ -5,7 +5,24 @@ var https = require("https");
 var fs = require("fs");
 var querystring = require('querystring');
 
-const { execSync } = require('child_process');
+const { execSync, spawn } = require('child_process');
+var command = "source ~/tensorflow/bin/activate && python -u cats.py"
+var cats_nn = spawn(command, {
+  shell: "/bin/bash",
+  env: {"PYTHONUNBUFFERED": "true"}
+})
+
+cats_nn.stdout.on("data", function (data) {
+  console.log(data.toString());
+});
+
+cats_nn.stderr.on('data', function (data) {
+  process.stdout.write(data.toString());
+});
+
+cats_nn.on("close", function(code){
+  console.log("python exited with code", code)
+})
 
 // init project
 var express = require('express');
@@ -89,17 +106,19 @@ function handleUpdate(update) {
     var url = telegram_api + "file/bot" + token + "/" + file_path
     var dest = "public/" + file_path
     download(url, dest, function(result) {
-      if ( is_cat(dest) ) {
-        response = "Это кот."
-      } else {
-        response = "Это не кот."
-      }
- 
-      console.log(url, response)
-      replyToMessage(update.message, response, true)
+      is_cat_async(dest, function(cat) {
+        if ( cat ) {
+          response = "Это кот."
+        } else {
+          response = "Это не кот."
+        }
+
+        console.log(url, response)
+        replyToMessage(update.message, response, true)
+      })
     })
   })
-  
+
   console.log(update.message)
 }
 
@@ -116,12 +135,34 @@ function download(url, dest, cb) {
   });
 }
 
+function is_cat_async(filename, cb) {
+  console.log("is cat?", filename)
+  cats_nn.stdin.write(filename + "\n")//"catpics/img/cat1.jpg")
+  //
+  // cats_nn.stderr.on("data", function (data) {
+  //   console.log(data.toString())
+  //   cb(false)
+  // })
+
+  var respondCat = function (data) {
+    var analysis = data.toString()
+    var cat = analysis.includes("cat") || analysis.includes("tabby")
+
+    console.log(analysis)
+
+    cats_nn.stdout.removeListener("data", respondCat);
+    cb(cat)
+  }
+
+  cats_nn.stdout.on("data", respondCat);
+}
+
 function is_cat(filename) {
-  var command = "source ~/tensorflow/bin/activate; python cats.py " + filename
+  var command = "source ~/tensorflow/bin/activate; python cats.py -i " + filename
 
   try {
     console.log(command)
-  
+
     var str = execSync(command)
   } catch (e) {
     console.err(e)
