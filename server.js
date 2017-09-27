@@ -68,10 +68,9 @@ function getUpdates() {
 }
 
 function handleUpdate(update) {
-  var code = update.message.text;
-  console.log("run",code)
- 
   if (!update.message.photo) {
+    var code = update.message.text;
+    console.log("get",code)
     return 
   }
 
@@ -97,7 +96,7 @@ function handleUpdate(update) {
       }
  
       console.log(url, response)
-      replyToMessage(update.message, response)
+      replyToMessage(update.message, response, true)
     })
   })
   
@@ -120,8 +119,14 @@ function download(url, dest, cb) {
 function is_cat(filename) {
   var command = "source ~/tensorflow/bin/activate; python cats.py " + filename
 
-  console.log(command)
-  var str = execSync(command)
+  try {
+    console.log(command)
+  
+    var str = execSync(command)
+  } catch (e) {
+    console.err(e)
+    return false
+  }
 
   console.log("response", str.toString())
 
