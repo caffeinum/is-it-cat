@@ -5,7 +5,6 @@ This is the source code for the bot, who runs on AWS servers. The setup is: Kero
 
 To run, if everything else is set up,
 
-    export PORT=8080
     npm install
     npm run start
     
