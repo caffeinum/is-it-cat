@@ -1,0 +1,132 @@
+Your app is listening on port 8080
+Your app is listening on port 8080
+run undefined
+get https://api.telegram.org/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/sendMessage?chat_id=3457540&parse_mode=Markdown&text=%D0%A5%D0%BC...
+{ message_id: 211,
+  from: 
+   { id: 3457540,
+     is_bot: false,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     language_code: 'en-US' },
+  chat: 
+   { id: 3457540,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     type: 'private' },
+  date: 1506474320,
+  forward_from: 
+   { id: 3457540,
+     is_bot: false,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     language_code: 'en-US' },
+  forward_date: 1506473555,
+  photo: 
+   [ { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABCLEHwwyMYnHWB0BAAEC',
+       file_size: 1208,
+       file_path: 'photos/file_28.jpg',
+       width: 67,
+       height: 90 },
+     { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABEr1jok3YjaeWR0BAAEC',
+       file_size: 14522,
+       width: 240,
+       height: 320 },
+     { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABL5IvCWqSI-aWh0BAAEC',
+       file_size: 62599,
+       file_path: 'photos/file_29.jpg',
+       width: 600,
+       height: 800 },
+     { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABGtCP-DZQ9-RVx0BAAEC',
+       file_size: 104542,
+       width: 960,
+       height: 1280 } ] }
+source ~/tensorflow/bin/activate; python cats.py public/photos/file_29.jpg
+response [[('n04277352', 'spindle', 0.42312896), ('n04133789', 'sandal', 0.2140521), ('n04141327', 'scabbard', 0.040695757), ('n03047690', 'clog', 0.036448091), ('n02797295', 'barrow', 0.022721799)]]
+
+https://api.telegram.org/file/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/photos/file_29.jpg Это не кот.
+get https://api.telegram.org/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/sendMessage?chat_id=3457540&parse_mode=Markdown&text=%D0%AD%D1%82%D0%BE%20%D0%BD%D0%B5%20%D0%BA%D0%BE%D1%82.
+run undefined
+get https://api.telegram.org/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/sendMessage?chat_id=3457540&parse_mode=Markdown&text=%D0%A5%D0%BC...
+{ message_id: 214,
+  from: 
+   { id: 3457540,
+     is_bot: false,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     language_code: 'en-US' },
+  chat: 
+   { id: 3457540,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     type: 'private' },
+  date: 1506474362,
+  forward_from: 
+   { id: 3457540,
+     is_bot: false,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     language_code: 'en-US' },
+  forward_date: 1506473555,
+  photo: 
+   [ { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABCLEHwwyMYnHWB0BAAEC',
+       file_size: 1208,
+       file_path: 'photos/file_28.jpg',
+       width: 67,
+       height: 90 },
+     { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABEr1jok3YjaeWR0BAAEC',
+       file_size: 14522,
+       width: 240,
+       height: 320 },
+     { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABL5IvCWqSI-aWh0BAAEC',
+       file_size: 62599,
+       file_path: 'photos/file_29.jpg',
+       width: 600,
+       height: 800 },
+     { file_id: 'AgADAgADWqgxG4WOWErjLjfEC__LPXroDw4ABGtCP-DZQ9-RVx0BAAEC',
+       file_size: 104542,
+       width: 960,
+       height: 1280 } ] }
+source ~/tensorflow/bin/activate; python cats.py public/photos/file_29.jpg
+response [[('n04277352', 'spindle', 0.42312896), ('n04133789', 'sandal', 0.2140521), ('n04141327', 'scabbard', 0.040695757), ('n03047690', 'clog', 0.036448091), ('n02797295', 'barrow', 0.022721799)]]
+
+https://api.telegram.org/file/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/photos/file_29.jpg Это не кот.
+get https://api.telegram.org/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/sendMessage?chat_id=3457540&parse_mode=Markdown&text=%D0%AD%D1%82%D0%BE%20%D0%BD%D0%B5%20%D0%BA%D0%BE%D1%82.
+run undefined
+get https://api.telegram.org/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/sendMessage?chat_id=3457540&parse_mode=Markdown&text=%D0%A5%D0%BC...
+{ message_id: 217,
+  from: 
+   { id: 3457540,
+     is_bot: false,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     language_code: 'en-US' },
+  chat: 
+   { id: 3457540,
+     first_name: 'Леша',
+     last_name: 'Быхун',
+     username: 'caffeinum',
+     type: 'private' },
+  date: 1506474372,
+  photo: 
+   [ { file_id: 'AgADAgADVagxG4WOWEqy7am2Snu3ZBU2Sw0ABPpS12uAWsIcOzEQAAEC',
+       file_size: 868,
+       file_path: 'photos/file_1.jpg',
+       width: 90,
+       height: 60 },
+     { file_id: 'AgADAgADVagxG4WOWEqy7am2Snu3ZBU2Sw0ABLG30-zNJh28OjEQAAEC',
+       file_size: 4550,
+       width: 276,
+       height: 183 } ] }
+source ~/tensorflow/bin/activate; python cats.py public/photos/file_32.jpg
+response [[('n02111500', 'Great_Pyrenees', 0.20964095), ('n02104029', 'kuvasz', 0.18630424), ('n02091831', 'Saluki', 0.16723344), ('n02099601', 'golden_retriever', 0.16063462), ('n02090622', 'borzoi', 0.040343791)]]
+
+https://api.telegram.org/file/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/photos/file_32.jpg Это не кот.
+get https://api.telegram.org/bot470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0/sendMessage?chat_id=3457540&parse_mode=Markdown&text=%D0%AD%D1%82%D0%BE%20%D0%BD%D0%B5%20%D0%BA%D0%BE%D1%82.

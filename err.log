@@ -1,0 +1,62 @@
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::8080
+    at Object._errnoException (util.js:1026:11)
+    at _exceptionWithHostPort (util.js:1049:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1343:14)
+    at listenInCluster (net.js:1391:12)
+    at Server.listen (net.js:1474:7)
+    at Function.listen (/home/ubuntu/nodejs/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/ubuntu/nodejs/server.js:162:20)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::8080
+    at Object._errnoException (util.js:1026:11)
+    at _exceptionWithHostPort (util.js:1049:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1343:14)
+    at listenInCluster (net.js:1391:12)
+    at Server.listen (net.js:1474:7)
+    at Function.listen (/home/ubuntu/nodejs/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/ubuntu/nodejs/server.js:162:20)
+    at Module._compile (module.js:624:30)
+    at Object.Module._extensions..js (module.js:635:10)
+    at Module.load (module.js:545:32)
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '~/image.jpg'
+events.js:182
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: ENOENT: no such file or directory, open '~/image.jpg'
+2017-09-27 01:05:28.120534: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:05:28.120582: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:05:28.120588: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:05:28.120592: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:05:28.120595: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Using TensorFlow backend.
+2017-09-27 01:06:10.087064: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:10.087091: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:10.087108: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:10.087112: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:10.087116: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Using TensorFlow backend.
+2017-09-27 01:06:19.405792: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:19.405850: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:19.405867: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:19.405871: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-09-27 01:06:19.405875: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Using TensorFlow backend.
+Exception ignored in: <bound method Session.__del__ of <tensorflow.python.client.session.Session object at 0x7fd721e4dda0>>
+Traceback (most recent call last):
+  File "/home/ubuntu/tensorflow/lib/python3.4/site-packages/tensorflow/python/client/session.py", line 701, in __del__
+TypeError: 'NoneType' object is not callable
