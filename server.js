@@ -88,6 +88,7 @@ function handleUpdate(update) {
   if (!update.message.photo) {
     var code = update.message.text;
     console.log("text: [", update.message.from.username, "]: ",code)
+    if (code.includes("не кот")) replyToMessage(update.message, "Это ты не кот.", true)
     return 
   }
 
