@@ -28,12 +28,10 @@ cats_nn.on("close", function(code){
 var express = require('express');
 var app = express();
 
-var token = "470423265:AAFNppOsnPtJV8kUdBjoGvKEGdHKpygCIF0"
+var token = process.env.TOKEN
 var url = "https://super-cook.glitch.me/" + token
-var telegram_api = "https://api.telegram.org/"//402243532:AAHds37dMd2Q_TTN4xsO1WdHmc25lU8pXOw/setWebhook?url=https://super-cook.glitch.me/402243532:AAHds37dMd2Q_TTN4xsO1WdHmc25lU8pXOw"
+var telegram_api = "https://api.telegram.org/"
 var api_url = telegram_api + "bot" + token
-
-// https://super-cook.glitch.me/402243532:AAHds37dMd2Q_TTN4xsO1WdHmc25lU8pXOw
 
 
 var updates = [];
@@ -139,11 +137,6 @@ function download(url, dest, cb) {
 function is_cat_async(filename, cb) {
   console.log("is cat?", filename)
   cats_nn.stdin.write(filename + "\n")//"catpics/img/cat1.jpg")
-  //
-  // cats_nn.stderr.on("data", function (data) {
-  //   console.log(data.toString())
-  //   cb(false)
-  // })
 
   var respondCat = function (data) {
     var analysis = data.toString()
