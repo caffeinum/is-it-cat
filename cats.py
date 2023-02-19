@@ -43,11 +43,8 @@ for line in sys.stdin:
 		print(result)
 		sys.stdout.flush()
 
-	except FileNotFoundError:
+	except (FileNotFoundError, IsADirectoryError):
 		# print("no file:" + line + ":")
-		continue
-	except IsADirectoryError:
-		# print("dir:" + line + ":")
 		continue
 	else:
 		# print("error")
